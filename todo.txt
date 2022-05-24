@@ -1,0 +1,37 @@
+Proyecto que anda: expo-firebase-crud-master
+
+1.- Si esta logueado y es admin mostrar la pantalla de usuarios
+
+2.- al loguear: traer el usuario, sino existe agregarlo con rol de cliente
+agregar el rol al localstorage, si existe traer el rol
+
+3.- Pantalla usuarios: terminar el boton logout
+
+4.- del abm de usuarios que se pueda agregar de un select el rol
+
+
+  /*
+  const getUserById = async (id) => {
+    
+    const dbRef = firebase.db.collection("users").doc(id);
+    const doc = await dbRef.get();
+    const user = doc.data();
+    setUser({ ...user, id: doc.id });
+    setLoading(false);
+
+    /*firebase.db.collection("users").onSnapshot((querySnapshot) => {
+      const users = [];
+      querySnapshot.docs.forEach((doc) => {
+        console.log(doc)
+        const { name, email, phone, id } = doc.data();
+        if(email === emailQuery){
+          const user = doc.data();
+          console.log(user)
+          setUser({ ...user, id: doc.id });;
+        }        
+      });
+      
+    });
+    setLoading(false);
+
+  };*/
